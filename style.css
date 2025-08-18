@@ -1,77 +1,42 @@
-/* style.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 3rem;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8f9fb;
+  color: #333;
 }
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
 }
-
-.pagination {
-    text-align: center;
-    margin-top: 2rem;
+nav a {
+  margin-right: .5rem;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: .3rem .6rem;
+  border-radius: 6px;
 }
-
-.pagination a {
-    color: #007BFF;
-    padding: 8px 16px;
-    text-decoration: none;
-    border: 1px solid #007BFF;
-    margin: 0 5px;
-    border-radius: 4px;
+nav a:hover {
+  background: #eee;
 }
-
-.pagination a:hover {
-    background-color: #007BFF;
-    color: white;
+main {
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
 }
-
-.pagination .active {
-    background-color: #007BFF;
-    color: white;
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #666;
+  font-size: .9rem;
 }
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #ddd; padding: .5rem; text-align: left; }
+form { display: grid; gap: .5rem; max-width: 400px; }
+input, textarea, button {
+  padding: .6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
-
-.card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 20px 0px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    text-align: center;
-}
-
-.card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-h3 {
-    margin-top: 10px;
-    font-size: 18px;
-    text-transform: capitalize;
-}
-
-h1 {
-    text-align: center;
-    margin: 2rem;
-}
-
-p {
-    font-size: 14px;
-}
-
-#page-numbers {
-    margin-top: 20px;
-    font-size: 16px;
-}
+button { background: purple; color: white; border: none; cursor: pointer; }
